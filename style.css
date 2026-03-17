@@ -2,83 +2,73 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
   background: #0f172a;
   color: #e2e8f0;
 }
 
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(255,255,255,0.02);
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #cbd5e1;
+}
+
 /* HERO */
 .hero {
-  text-align: center;
-  padding: 100px 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 60px;
+  align-items: center;
 }
 
-.hero h1 {
-  font-size: 48px;
-  font-weight: 700;
+.hero-left {
+  max-width: 500px;
 }
 
-.subtitle {
+.hero-left h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
   color: #94a3b8;
-  margin-top: 10px;
-}
-
-.tagline {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #cbd5f5;
+  margin-bottom: 30px;
 }
 
 /* BUTTONS */
-.buttons {
-  margin-top: 30px;
-}
-
 .btn {
-  padding: 12px 24px;
-  margin: 10px;
+  padding: 12px 20px;
+  margin-right: 10px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .primary {
   background: #f59e0b;
-  color: #fff;
+  color: white;
 }
 
-.secondary {
+.outline {
   border: 1px solid #475569;
-  color: #e2e8f0;
+  color: white;
 }
 
-/* ABOUT */
-.about {
-  text-align: center;
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.about h2 {
-  margin-bottom: 20px;
-}
-
-/* PROJECTS */
-.projects {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.project-grid {
+/* RIGHT SIDE CARDS */
+.hero-right {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 30px;
 }
 
 .card {
@@ -90,6 +80,11 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  background: #334155;
+  transform: scale(1.05);
+}
+
+/* ABOUT */
+.about {
+  padding: 60px;
+  max-width: 700px;
 }
