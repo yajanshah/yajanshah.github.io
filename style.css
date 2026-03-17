@@ -5,8 +5,12 @@
   font-family: 'Courier New', monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #000000;
+  background: #000;
   color: #00ffcc;
 }
 
@@ -61,7 +65,7 @@ body {
   color: white;
 }
 
-.outline {
+.secondary {
   border: 1px solid #1e3a8a;
   color: #1e3a8a;
 }
@@ -111,23 +115,25 @@ body {
 
 /* RESUME */
 .resume-section {
-  padding: 80px 60px;
+  padding: 100px 40px;
   text-align: center;
 }
 
 .resume-section h2 {
   margin-bottom: 30px;
+  font-size: 28px;
   color: #22c55e;
 }
 
 .resume-container {
-  width: 100%;
-  max-width: 900px;
-  height: 600px;
+  width: 95%;
+  max-width: 1200px;
+  height: 900px;
   margin: auto;
   border: 2px solid #1e3a8a;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
+  background: #000;
 }
 
 .resume-container iframe {
