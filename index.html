@@ -2,71 +2,148 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Yajan Shah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yajan Shah — Developer Portfolio</title>
+  <meta name="description" content="Yajan Shah — full-stack developer building clean, market-ready web products.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav">
-    <h2>Yajan Shah</h2>
-    <div>
+    <a href="#top" class="brand">Yajan<span>Shah</span></a>
+    <div class="nav-links">
       <a href="#projects">Projects</a>
-      <a href="Yajan_shah_resume-07-08-2.pdf">Resume</a>
+      <a href="#about">About</a>
+      <a href="Yajan_shah_resume-07-08-2.pdf" target="_blank">Resume</a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-left">
-      <h1>Building Clean & Responsive Projects</h1>
-      <p>
-        I design and develop modern web applications with clean UI and market ready products.
-      </p>
-
-      <div class="hero-btns">
-        <a href="Yajan_shah_resume-07-08-2.pdf" class="btn primary">View Resume</a>
-
-        <a href="yajanshahCV.pdf" download class="btn secondary">
-          Download Resume
-        </a>
-      </div>
+  <header class="hero" id="top">
+    <p class="hero-kicker">Full-Stack Developer</p>
+    <h1>I build clean, responsive,<br><span class="gradient-text">market-ready products.</span></h1>
+    <p class="hero-sub">
+      From business websites to full-scale management platforms — I design and ship
+      modern web applications that real businesses run on every day.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn primary">View My Work</a>
+      <a href="Yajan_shah_resume-07-08-2.pdf" target="_blank" class="btn secondary">View Resume</a>
     </div>
+    <div class="hero-stats">
+      <div><strong>4</strong><span>Projects Shipped</span></div>
+      <div><strong>3</strong><span>Live Client Products</span></div>
+      <div><strong>100%</strong><span>Built From Scratch</span></div>
+    </div>
+  </header>
 
-    <div class="hero-right">
-      <div class="card">
-        <h3>News App</h3>
-        <p>Android app using REST APIs</p>
-        <div class="links">
-          <a href="https://github.com/yajanshah/news-app" target="_blank">GitHub</a>
-          <a href="https://github.com/yajanshah/Portfolio" target="_blank">Live</a>
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+    <p class="section-sub">Live products in the wild — click through and try them.</p>
+
+    <div class="project-grid">
+
+      <!-- Brewberry -->
+      <article class="project-card accent-green">
+        <div class="card-top">
+          <span class="tag">Full-Stack Platform</span>
+          <span class="status live">● Live</span>
         </div>
-      </div>
+        <h3>Brewberry</h3>
+        <p>
+          A complete café ordering &amp; management platform — online menu, orders,
+          loyalty points, coupons, and a real-time control room for staff.
+        </p>
+        <ul class="tech">
+          <li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li><li>CI/CD</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://brewberry.org" target="_blank" rel="noopener" class="btn card-btn">Visit brewberry.org ↗</a>
+        </div>
+      </article>
 
-      <div class="card">
+      <!-- Swastik Enterprises -->
+      <article class="project-card accent-blue">
+        <div class="card-top">
+          <span class="tag">Business Management App</span>
+          <span class="status live">● Live</span>
+        </div>
+        <h3>Swastik Enterprises</h3>
+        <p>
+          A shop-management system for a trading business — inventory, customer
+          ledgers, and billing, all in one dashboard.
+        </p>
+        <ul class="tech">
+          <li>Next.js</li><li>TypeScript</li><li>Vercel</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://swastikenterprises.vercel.app/login" target="_blank" rel="noopener" class="btn card-btn">Open the App ↗</a>
+        </div>
+      </article>
+
+      <!-- Beekeeping -->
+      <article class="project-card accent-amber">
+        <div class="card-top">
+          <span class="tag">Business Website</span>
+          <span class="status live">● Live</span>
+        </div>
         <h3>Beekeeping Website</h3>
-        <p>Responsive business website</p>
-        <div class="links">
-          <a href="https://github.com/yajanshah/Portfolio" target="_blank">GitHub</a>
-          <a href="https://github.com/yajanshah/Portfolio" target="_blank">Live</a>
+        <p>
+          A responsive business website for a beekeeping brand — clean product
+          showcase, fast loading, and mobile-first design.
+        </p>
+        <ul class="tech">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://codexlabs.online" target="_blank" rel="noopener" class="btn card-btn">Visit codexlabs.online ↗</a>
         </div>
-      </div>
+      </article>
+
+      <!-- News App -->
+      <article class="project-card accent-red">
+        <div class="card-top">
+          <span class="tag">Android App</span>
+          <span class="status code">● Open Source</span>
+        </div>
+        <h3>News App</h3>
+        <p>
+          An Android news application powered by REST APIs — live headlines,
+          category browsing, and a clean native UI.
+        </p>
+        <ul class="tech">
+          <li>Android</li><li>Java</li><li>REST APIs</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://github.com/yajanshah/news-app" target="_blank" rel="noopener" class="btn card-btn">View on GitHub ↗</a>
+        </div>
+      </article>
+
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="about">
-    <h2>About Me</h2>
+  <section class="about" id="about">
+    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
     <p>
-      Computer Science student focused on building scalable web apps.
-      I enjoy solving real-world problems through clean design and efficient code.
+      I'm a Computer Science student focused on building scalable web apps.
+      I enjoy solving real-world problems through clean design and efficient code —
+      and I ship products that businesses actually use, not just demos.
     </p>
+    <div class="hero-btns">
+      <a href="Yajan_shah_resume-07-08-2.pdf" target="_blank" class="btn secondary">Download Resume</a>
+    </div>
   </section>
 
-  <!-- PROJECTS -->
- 
-
-  <!-- RESUME -->
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Yajan Shah · <a href="https://github.com/yajanshah" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
 
 </body>
 </html>
